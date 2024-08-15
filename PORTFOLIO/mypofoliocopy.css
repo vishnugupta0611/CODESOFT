@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:;
+}
+body {
+
+   overflow-x:hidden ;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(189, 155, 197), rgb(190, 162, 162), rgb(220, 232, 220));
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners of the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar handle and track */
+}
+/* Style the scrollbar for card1 */
+.card1::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+
+.card1::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.card1::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners of the scrollbar handle */
+}
+
+.card1::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+}
+
+/* For Firefox */
+.card1 {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar handle and track */
+}
+
+
+nav {
+    display: flex;
+    width: 100vw;
+    height: 2.7rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background: #524e4e5d;
+}
+
+#ul2 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.intro::before {
+   content: "";
+    animation: textcirculate 5s linear 1 forwards;
+}
+
+@keyframes textcirculate {
+    0% { content: ""; }
+    25% { content: " I"; }
+    50% { content: " I am "; }
+    75% { content: " I am  Vishnu"; }
+    100% { content: " I am  Vishnu Gupta."; }
+}
+#introexplain::before{
+    content: "";
+    animation: texttravel 10s linear 1 forwards;
+  
+}
+#introexplain{
+    max-width: 25rem;
+    height: 7rem;
+}
+@keyframes texttravel {
+    0%{content: "i";}
+    5%{content: "i ";}
+    10%{content: "i am";}
+    15%{content: "i am a ";}
+    20%{content: "i am a student";}
+    25%{content: "i am a student";}
+    30%{content: "i am a student and ";}
+    35%{content: "i am a student and i";}
+    40%{content: "i am a student and i am";}
+    45%{content: "i am a student and i am learning ";}
+    50%{content: "i am a student and i am learning";}
+    55%{content: "i am a student and i am learning programming";}
+    60%{content: "i am a student and i am learning programming and ";}
+    65%{content: "i am a student and i am learning programming and well ";}
+    70%{content: "i am a student and i am learning programming and well known ";}
+    75%{content: "i am a student and i am learning programming and well known about ";}
+    80%{content: "i am a student and i am learning programming and well known about frontend ";}
+    100%{content: "i am a student and i am learning programming and well known about frontend development.";}
+
+}
+article{
+    height: 25rem;
+    width: 100%;
+    padding: 3rem;
+}
+
+.middlesection{
+    display: flex;
+    justify-content: space-around;
+}
+.textpart{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  
+
+}
+.intro{
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+    color: rgb(176, 88, 11);
+    height: 4rem;
+}
+#intropart{
+    font-size: 2rem;
+    color: rgb(83, 86, 89);
+}
+.imgpart img{
+    mix-blend-mode: color-burn;
+}
+.socialmedia{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+@media (max-width:600px) {
+    .middlesection{
+        flex-direction: column-reverse;
+      
+    }
+    article{
+        padding: 4.5rem;
+        height: 100%;
+        width: 100%;
+    }
+    .intro{
+        font-size: 1.2rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+        color: rgb(176, 88, 11);
+        height: 3rem;
+    }
+    #intropart{
+        font-size: 1.5rem;
+        color: rgb(83, 86, 89);
+    }
+    .textpart{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      margin-top: 2rem;
+    
+    }
+    #introexplain{
+        max-width: 25rem;
+        height: 7rem;
+    }
+  
+   #skillstag{
+    display: none;
+   }
+   .skillssection2{
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
+   gap: 2rem;
+
+}
+.moreaboutskilla button{
+    display: none;
+}
+}
+.skills{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.skillssection1{
+    margin-top: 2rem;
+    margin-bottom: 2.4rem;
+}
+/* for progress bar */
+.container{
+  height: 10rem;
+  width: 10rem;
+}
+.outer{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgb(241, 230, 230);
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: inset 4px 4px 5px -1px rgb(229, 227, 227),
+   inset -4px -4px 5px -1px rgba(222, 208, 208, 0.802) ;
+}
+.inner{
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    border: 1px solid rgb(248, 240, 240);
+    border-radius: 50%;
+   box-shadow: inset 4px 4px 5px -1px rgb(229, 227, 227),
+   inset -4px -4px 5px -1px rgba(222, 208, 208, 0.802) ;
+}
+.circle1 circle{
+    fill: none;
+    stroke: url("#GradientColor");
+    stroke-width: 20px;
+    stroke-dasharray: 395;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+.circle2 circle{
+    fill: none;
+    stroke: url("#GradientColor");
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+.circle3 circle{
+    fill: none;
+    stroke: url("#GradientColor");
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+.circle4 circle{
+    fill: none;
+    stroke: url("#GradientColor");
+    stroke-width: 20px;
+    stroke-dasharray: 402;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 200;
+    }
+    
+}
+svg{
+    position: absolute;
+    top: -24%;
+    left: -24%;
+}
+.text1,.text2,.text3,.text4{
+    position: relative;
+    left: 40%;
+    top: 40%;
+}
+.skillssection2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.skillname{
+    position: relative;
+    top: 100%;
+    left: 35%;
+}
+.container,.detailcards{
+    animation: slowlyshow;
+    animation-timeline: view();
+    animation-range:entry 0 cover 50% ;
+}
+@keyframes slowlyshow {
+    from{
+        opacity: 0;
+        scale: 0.6;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.aboutbutton button{
+    outline: none;
+    border: none;
+background: linear-gradient(rgb(158, 158, 209),rgb(112, 100, 100));
+height: 2rem;
+width: 10rem;
+margin-bottom: 3rem;
+}
+.moreaboutskilla button{
+    margin-top: 3rem;
+    outline: none;
+    border: none;
+background: linear-gradient(rgb(158, 158, 209),rgb(112, 100, 100));
+height: 2rem;
+width: 15rem;
+margin-bottom: 3rem;
+margin-left: 4rem;
+animation: slowlyshow;
+animation-timeline: view();
+animation-range:entry 0 cover  30%;
+}
+.details{
+    padding: 3rem;
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+}
+.detailcards,.downloadcv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    span{
+        color: rebeccapurple;
+    }
+}
+.card1,.card2{
+    height: 15rem;
+    width: 20rem;
+    border: 1px solid black;
+   transition: all;
+   transition-duration: 0.2s;
+   overflow: auto;
+   transition-timing-function: linear;
+   
+ display: flex;
+transition: all;
+transition-duration: 0.5s;
+ justify-content: center;
+ align-items: center;
+ justify-content: space-around;
+}
+
+.card1:hover{
+    box-shadow: 2px 3px 3px rgb(72, 54, 54);
+   
+}
+.expand{
+    width: 40rem;
+}
+.expandheight{
+    height: 29rem;
+}
+.card1para,.card2para{
+    width: 18rem;
+    display: none;
+}
+.card1img img{
+    height: 11rem;
+    width: 15rem;
+}
+.card2 img{
+    height: 11rem;
+    width: 15rem; 
+}
+.descr{
+    position: absolute;
+   bottom: -82%;
+   left: 24%;
+}
+.downloadcv{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+form button{
+    height: 2rem;
+    width: 5rem;
+    background: #cca0db;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillscards{
+    background: #af9d9d;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem;
+gap: 1rem;
+}
+.skillcard1{
+    height: 18rem;
+    width: 20rem;
+    background: #c7b9b9b6;
+    padding: 8px;
+    position: relative;
+     overflow: hidden;
+}
+.in{
+    height: 100%;
+    width: 100%;
+    background: #c4a0a0;
+    position: relative;
+    z-index: 99;
+}
+.skillcard1::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background: linear-gradient(rgb(167, 64, 64),rgb(96, 96, 160));
+    animation: move 3s infinite;
+}
+@keyframes move {
+    100%{
+        transform: translate(-50%,-50%) rotate(225deg);
+    }
+}
+
+.skillcon{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skillcon ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.projectlink{
+    color: aqua;
+    font-style: italic;
+}
+.skillcon ul li::after{
+    list-style: none;
+    
+}
+#projectheading{
+    margin-left: 6.5rem;
+}
+#querryinput{
+    height: 1.5rem;
+    margin-bottom: 2rem;
+}
+@media (max-width:400px) {
+    .detailcards,.card1,.card2{
+       flex-direction: column;
+       gap: 2rem;
+    }
+}

@@ -1,0 +1,457 @@
+*{
+    margin: 0%;
+    padding: 0%;
+   
+}
+body{
+    overflow-x: hidden;
+}
+.main{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background:white;
+    height: 100%;
+    width: 100%;
+}
+#navcontainer{
+    height: 90px;
+    width: 100%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content1 img{
+    height: 50px;
+    width: 50px;
+    
+}
+.content1{
+    display: flex;
+}
+.content2{
+    display: block;
+}
+@media(max-width:775px)
+{
+    .content2{
+        display: none;
+    }
+}
+
+
+
+
+.content1 .heading{
+    margin-left: 30px;
+}
+a{
+    margin: 20px;
+    text-decoration: none;
+}
+#button1{
+    height: 30px;
+    width: 95px;
+    background: #2b24e8;
+    border-radius: 5px;
+}
+ #buttoncontent{
+    color: #ece4e4;
+}
+#maincontainer{
+    height:100% ;
+    width: 100%;
+    background: #f4eded;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    background:white;
+    display: flex;
+/* padding: 100px; */
+padding-top: 5%;
+padding-left: 10%;
+padding-right: 10%;
+}
+@media(max-width:800px)
+{
+    .hero{
+        flex-direction: column-reverse;
+    }
+}
+h5 ,h1{
+    display: inline;
+}
+.herocontent1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* width: 50%; */
+    margin-right: 20px;
+}
+.herocontent2{
+    height: 100%;
+    /* width: 50%; */
+}
+@media (min-width :800px)
+{
+    .herocontent1{
+        width: 50%;
+    }
+    .herocontent2{
+        width: 50%;
+    }
+}
+.herocontent2 img{
+    height: 500px;
+    width: 100%;
+}
+#h1c1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#h1c2{
+    margin-bottom: 50px;
+}
+.herobutton{
+    margin-top: 50px;
+}
+.herobutton button{
+    height: 40px;
+    width: 100px;
+}
+#bt1{
+    background: #381eca;
+}
+#bt2{
+    background: #3e3333;
+}
+#bt1h1{
+    color:azure
+}
+#bt1h2{
+    color: #ece4e4;
+}
+.mainbottomcontainer{
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+ 
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.logocontainer img{
+    height: 100px;
+    width: 50px;
+ margin-right: 20px;
+    
+}
+.mainbottomheading{
+    margin-top: 20px;
+}
+.logocontainer{
+    display: flex;
+}
+.cardmaincontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e5dede;
+}
+#cardtext2{
+    max-width: 300px;
+}
+.card{
+    height: 200px;
+    width: 250px;
+    background: #3012f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.cardcontent1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.cardcontent2{
+    max-width: 800px;
+    text-align: center;
+}
+
+.cardcontent3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+@media (max-width:700px) {
+    .cardcontent3{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    
+ }
+
+.card img{
+    height: 40px;
+    width: 40px;
+}
+.card1{
+    background: #de8383;
+}
+
+.card2{
+    background: #d466e2;
+}
+.card3{
+    background: #7edcbf;
+}
+
+.card4{
+    background: #a683de;
+}
+
+.card5{
+    background: #77393b;
+}
+
+.card6{
+    background: #83de8c;
+}
+
+.testimonialbox{
+    height: 100%;
+    width: 100%;
+background:white;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+.testimonialcontent1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.testimonialcontent2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 20px;
+}
+@media (max-width:1000px)
+{
+    .testimonialcontent2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+.testimonialcard{
+    height: 250px;
+    width: 300px;
+    background: #f6ebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid;
+    border-radius: 9px;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.testimonialcard:hover{
+    transform: scale(1.03);
+    box-shadow: 3px 2px 3px;
+    border: 1px solid blue;
+}
+.testimonialcard img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}
+.tcardcontent1{
+    text-align: center;
+    max-width: 230px;
+}
+.newsmain{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+    
+}
+.newsletter{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.leftnews{
+    height: 100%;
+    width: 50%;
+    /* background: #ada1a1; */
+}
+.rightnews{
+    /* background: #ada1a1; */
+}
+.leftnews img{
+    height: 250px;
+    width: 280px;
+    display: block;
+}
+@media (max-width:900px)
+{
+    .leftnews{
+        display: none;
+    }
+    .newsletter{
+        justify-content: center;
+        align-items: center;
+    }
+}
+.newscontent2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+@media (max-width:900px)
+{
+    .leftnews{
+        display: none;
+    }
+    .newsletter{
+        justify-content: center;
+        align-items:center;
+}
+}
+.newsbutton{
+    margin-bottom: 15px;
+}
+.footer{
+    height: 100%;
+    width: 100%;
+}
+.fcontent1 img{
+    height: 50px;
+    width: 50px;
+}
+.fcontent3 img{
+    height: 40px;
+    width: 30px;
+}
+.footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+    background: #bdb6b6;
+    padding: 4%;
+    
+}
+
+
+.left{
+    margin-right: 170px;
+  
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+}
+.grid{
+    margin-right: 20px;
+}
+.grid li{
+    margin-top: 30px;
+}
+.grid h3{
+    margin-left: 10px;
+}
+.right{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+@media (max-width:1050px)
+{
+    .footer{
+        flex-direction: column;
+    }
+    .left{
+        flex-direction: row;
+        margin-bottom: 6%;
+    }
+}
+/* neeche change kiya hai thoda */
+
+/* @media(max-width:900px)
+{
+ .right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+ }
+} */
+@media (max-width:850px)
+{
+    .left{
+        display: none;
+    }
+}
+button{
+    cursor: pointer;
+    
+}
+@media (max-width:400px)
+{
+    .testimonialcontent1 h1{
+        font-size: 25px;
+    }
+}
+/* @media (max-width:350px)
+{
+    .heading h1{
+        opacity: 0;
+    }
+    .content1 img{
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+    .content3>#button1{
+     margin-right: 50px;
+    }
+} */
+
+    .heading h1{
+        font-size: 30px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+@media(max-width:650px)
+{
+    .right{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 50px;
+    }
+}
